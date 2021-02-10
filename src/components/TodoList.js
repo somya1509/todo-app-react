@@ -36,9 +36,9 @@ const TodoList = (props) => {
   const completeTodo = (id) => {
     let updatedTodo = todo.map((todos) => {
       if (todos.id === id) {
-        todo.isComplete = !todo.isComplete;
+        todos.isComplete = !todos.isComplete;
       }
-      return todo;
+      return todos;
     });
     setTodo(updatedTodo);
   };
